@@ -1,0 +1,19 @@
+@use "./partials/queries" as q;
+@use "./partials/mixins" as m;
+@use "./features/nav-top";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include m.full-screen;
+  background-image: url(./assets/img/mac-wallpaper.jpg);
+}
+
+p {
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+}
