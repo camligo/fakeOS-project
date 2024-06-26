@@ -5,9 +5,27 @@
   flex-direction: row;
   gap: 1em;
   background: lightgray;
-  border-bottom: #7d7a7a solid 2px;
+  border-bottom: #333333 solid 2px;
   list-style-type: none;
   padding-inline-start: 15px;
+
+  .dropdown {
+    position: relative;
+
+    .dropdown-list {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      list-style-type: none;
+      background: white;
+      border: 1px solid #ccc;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
 }
 
 #timeContainer {

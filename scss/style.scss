@@ -1,6 +1,7 @@
 @use "./partials/queries" as q;
 @use "./partials/mixins" as m;
 @use "./features/nav-top";
+@use "./features/apps";
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 * {
