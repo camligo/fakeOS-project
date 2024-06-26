@@ -11,6 +11,11 @@
   padding-inline-start: 15px;
 }
 
+#timeContainer {
+  margin-left: auto;
+  padding-inline-end: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
