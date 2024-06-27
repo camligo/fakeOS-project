@@ -56,19 +56,38 @@
   </nav>
   <main class="apps-bg">
     <div class="apps-container">
-      <div class="app-box">
+      <div id="binApp" class="app-box">
         <img class="app-icon" src="./assets/img/bin.png" alt="bin app">
         <p class="labels">Trash</p>
       </div>
-      <div class="app-box">
+      <div id="paintApp" class="app-box">
         <img class="app-icon" src="./assets/img/MacPaint.png" alt="paint app">
         <p class="labels">Mac Paint</p>
       </div>
-      <div class="app-box">
+      <div id="printApp" class="app-box">
         <img class="app-icon" src="./assets/img/print.png" alt="print app">
         <p class="labels">Print</p>
       </div>
     </div>
   </main>
+
+  <section id="paintModal" class="modal hidden">
+    <div class="top-row">
+      <h4>Mac Paint Folder</h4>
+      <button class="btn-close">x</button>
+    </div>
+  </section>
+  <section id="binModal" class="modal hidden">
+    <div class="top-row">
+      <h4>Bin</h4>
+      <button class="btn-close">x</button>
+    </div>
+  </section>
+  <section id="printModal" class="modal hidden">
+    <div class="top-row">
+      <h4>Print</h4>
+      <button class="btn-close">x</button>
+    </div>
+  </section>
 </body>
 </html>

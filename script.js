@@ -46,3 +46,42 @@ dropdownItems.forEach(item => {
     }
   });
 });
+
+
+// Modals
+const modals = document.querySelectorAll('.modal');
+const closeBtn = document.querySelector('.btn-close');
+const apps = document.querySelectorAll('.app-box')
+
+const openModal = (modal) => {
+  modal.classList.remove('hidden');
+}
+
+const closeModal = (modal) => {
+  modal.classList.add('hidden');
+}
+
+apps.forEach((app) => {
+  app.addEventListener('click', () => {
+    let modal;
+    if (app.id === 'paintApp') {
+      modal = document.getElementById('paintModal');
+    } else if (app.id === 'binApp') {
+      modal = document.getElementById('binModal');
+    } else if (app.id === 'printApp') {
+      modal = document.getElementById('printModal');
+    }
+    if (modal) {
+      openModal(modal);
+    }
+  })
+})
+
+modals.forEach(modal => {
+  const closeBtn = modal.querySelector('.btn-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      closeModal(modal);
+    });
+  }
+});

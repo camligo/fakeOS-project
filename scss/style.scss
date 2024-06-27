@@ -2,6 +2,7 @@
 @use "./partials/mixins" as m;
 @use "./features/nav-top";
 @use "./features/apps";
+@use "./features/modal";
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 * {
@@ -15,6 +16,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 p {
