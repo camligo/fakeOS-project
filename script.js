@@ -13,6 +13,7 @@ function displayCurrentTime() {
   let formattedTime = `${hours}:${mins}`;
   document.getElementById('timeDisplay').textContent = `${formattedTime}`;
 };
+
 displayCurrentTime();
 
 setInterval(() => {
@@ -34,8 +35,14 @@ dropdownItems.forEach(item => {
       menu.classList.remove('active');
     });
 
+    // remove active class styling if menu is not opened
+    dropdownItems.forEach(dropdown => {
+      dropdown.classList.remove('active');
+    });
+
     if (!isActive) {
       dropdownMenu.classList.add('active');
+      item.classList.add('active');
     }
   });
 });

@@ -6,24 +6,43 @@
   flex-direction: row;
   gap: 1em;
   background: lightgray;
-  border-bottom: #333333 solid 2px;
+  border-bottom: #333333 double 2px;
   list-style-type: none;
   padding-inline-start: 15px;
 }
 .nav-top .dropdown {
   position: relative;
+  padding-inline: 0.2em;
+}
+.nav-top .dropdown.active {
+  background: black;
+  color: #ccc;
 }
 .nav-top .dropdown .dropdown-list {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  min-width: 10em;
   list-style-type: none;
-  background: white;
-  border: 1px solid #ccc;
+  background: lightgray;
+  border: 2px double #333333;
 }
 .nav-top .dropdown .dropdown-list.active {
   display: block;
+}
+.nav-top .dropdown .dropdown-list .list-item {
+  padding-block: 0.2em;
+  margin-inline: 0.2em;
+}
+.nav-top .dropdown .dropdown-list .list-item .menu-item {
+  display: block;
+  text-decoration: none;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  color: black;
+}
+.nav-top .dropdown .dropdown-list .list-item .menu-item:hover {
+  background: black;
+  color: #ccc;
 }
 
 #timeContainer {
@@ -31,8 +50,35 @@
   padding-inline-end: 15px;
 }
 
-.fa-floppy-disk {
-  font-weight: 100;
+.apps-bg {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: 25%;
+}
+.apps-bg .apps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 25px;
+}
+.apps-bg .apps-container .app-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 75px;
+  flex-direction: column;
+  align-items: center;
+}
+.apps-bg .apps-container .app-box .app-icon {
+  height: 50px;
+}
+.apps-bg .apps-container .app-box .labels {
+  background: rgba(255, 255, 255, 0.6117647059);
+  width: 100%;
+  text-align: center;
 }
 
 * {
@@ -44,6 +90,9 @@ body {
   height: 100vh;
   width: 100%;
   background-image: url(./assets/img/mac-wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {

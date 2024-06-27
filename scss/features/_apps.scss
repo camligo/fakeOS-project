@@ -1,3 +1,34 @@
-.fa-floppy-disk {
-  font-weight: 100;
+.apps-bg {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: 25%;
+
+  .apps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 25px;
+
+    .app-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75px;
+      width: 75px;
+      flex-direction: column;
+      align-items: center;
+
+      .app-icon {
+        height: 50px;
+      }
+
+      .labels {
+        background: #ffffff9c;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }

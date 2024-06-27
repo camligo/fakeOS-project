@@ -11,46 +11,64 @@
 <body>
   <nav>
     <ul class="nav-top">
-      <li><i class="fa-brands fa-apple"></i></li>
+      <li class="dropdown">
+        <i class="fa-brands fa-apple"></i>
+        <ul class="dropdown-list">
+          <li class="list-item"><a href="#menu" class="menu-item">About This Mac</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">System Settings</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Shut Down</a></li>
+        </ul>
+      </li>
       <li class="dropdown">
         <p>File</p>
         <ul class="dropdown-list">
-          <li><a href="#menu">Action</a></li>
-          <li><a href="#menu">Another Action</a></li>
-          <li><a href="#menu">Something</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Open</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Save</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Save As</a></li>
         </ul>
       </li>
       <li class="dropdown">
         <p>Edit</p>
         <ul class="dropdown-list">
-          <li><a href="#menu">Action</a></li>
-          <li><a href="#menu">Another Action</a></li>
-          <li><a href="#menu">Something else</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Action</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Another Action</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Something else</a></li>
         </ul>
       </li>
       <li class="dropdown">
         <p>View</p>
         <ul class="dropdown-list">
-          <li><a href="#menu">Action</a></li>
-          <li><a href="#menu">Another Action</a></li>
-          <li><a href="#menu">Something else</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Action</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Another Action</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Something else</a></li>
         </ul>
       </li>
       <li class="dropdown">
         <p>Special</p>
         <ul class="dropdown-list">
-          <li><a href="#menu">Action</a></li>
-          <li><a href="#menu">Another Action</a></li>
-          <li><a href="#menu">Something else</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Action</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Another Action</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Something else</a></li>
         </ul>
       </li>
       <li id="timeContainer"><p id="timeDisplay"></p></li>
     </ul>
   </nav>
-  <main>
-    <ul>
-      <!-- <li><i class="fa-regular fa-floppy-disk"></i></li> -->
-    </ul>
+  <main class="apps-bg">
+    <div class="apps-container">
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/bin.png" alt="bin app">
+        <p class="labels">Trash</p>
+      </div>
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/MacPaint.png" alt="paint app">
+        <p class="labels">Mac Paint</p>
+      </div>
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/print.png" alt="print app">
+        <p class="labels">Print</p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
