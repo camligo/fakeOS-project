@@ -10,25 +10,29 @@
     align-items: flex-end;
     gap: 20px;
     padding: 25px;
+  }
+}
 
-    .app-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 75px;
-      width: 75px;
-      flex-direction: column;
-      align-items: center;
+.app-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 75px;
 
-      .app-icon {
-        height: 50px;
-      }
+  .app-icon {
+    height: 50px;
+  }
 
-      .labels {
-        background: #ffffff9c;
-        width: 100%;
-        text-align: center;
-      }
+  .labels {
+    background: #ffffff9c;
+    width: max-content;
+    text-align: center;
+    padding-inline: 10px;
+
+    &.file {
+      font-weight: 400;
     }
   }
 }

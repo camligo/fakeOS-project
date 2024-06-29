@@ -63,22 +63,26 @@
   gap: 20px;
   padding: 25px;
 }
-.apps-bg .apps-container .app-box {
+
+.app-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 75px;
   width: 75px;
-  flex-direction: column;
-  align-items: center;
 }
-.apps-bg .apps-container .app-box .app-icon {
+.app-box .app-icon {
   height: 50px;
 }
-.apps-bg .apps-container .app-box .labels {
+.app-box .labels {
   background: rgba(255, 255, 255, 0.6117647059);
-  width: 100%;
+  width: max-content;
   text-align: center;
+  padding-inline: 10px;
+}
+.app-box .labels.file {
+  font-weight: 400;
 }
 
 .modal {
@@ -91,7 +95,7 @@
   right: 20%;
   background-color: white;
   border: 2px solid rgb(19, 19, 19);
-  border-radius: 1px;
+  border-radius: 2px;
 }
 .modal.hidden {
   display: none;
@@ -99,14 +103,36 @@
 .modal .top-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   border-bottom: 4px black double;
+}
+.modal .top-row h4 {
+  padding: 1px;
+  align-self: center;
 }
 .modal .top-row .btn-close {
   width: 20px;
   background: white;
   border: 1.4px black solid;
+  position: absolute;
+  right: 0;
+}
+.modal .secondary-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px #6a6a6a solid;
+}
+.modal .secondary-row p {
+  margin-inline: 8px;
+  font-weight: 600;
+}
+.modal .modal-content {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
 }
 
 #binModal {

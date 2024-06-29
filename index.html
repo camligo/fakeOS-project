@@ -58,23 +58,38 @@
     <div class="apps-container">
       <div id="binApp" class="app-box">
         <img class="app-icon" src="./assets/img/bin.png" alt="bin app">
-        <p class="labels">Trash</p>
+        <p class="labels">Bin</p>
       </div>
       <div id="paintApp" class="app-box">
-        <img class="app-icon" src="./assets/img/MacPaint.png" alt="paint app">
-        <p class="labels">Mac Paint</p>
+        <img class="app-icon" src="./assets/img/desk.png" alt="paint folder">
+        <p class="labels">MacPaint</p>
       </div>
       <div id="printApp" class="app-box">
-        <img class="app-icon" src="./assets/img/print.png" alt="print app">
+        <img class="app-icon" src="./assets/img/printer.png" alt="print app">
         <p class="labels">Print</p>
       </div>
     </div>
   </main>
 
+  <!-- Modals -->
   <section id="paintModal" class="modal hidden">
     <div class="top-row">
-      <h4>Mac Paint Folder</h4>
+      <h4>MacPaint Folder</h4>
       <button class="btn-close">x</button>
+    </div>
+    <div class="secondary-row">
+      <p>2 items</p>
+      <p>315K available</p>
+    </div>
+    <div class="modal-content">
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/paint.png" alt="paint app">
+        <p class="labels file">MacPaint 1.4</p>
+      </div>
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/file.png" alt="paint file">
+        <p class="labels file">hello</p>
+      </div>
     </div>
   </section>
   <section id="binModal" class="modal hidden">
@@ -82,10 +97,28 @@
       <h4>Bin</h4>
       <button class="btn-close">x</button>
     </div>
+    <div class="secondary-row">
+      <p>3 items</p>
+      <p>65K in folder</p>
+    </div>
+    <div class="modal-content">
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/file.png" alt="file">
+        <p class="labels file">text</p>
+      </div>
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/file.png" alt="file">
+        <p class="labels file">doc</p>
+      </div>
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/dog.png" alt="file">
+        <p class="labels file">random</p>
+      </div>
+    </div>
   </section>
   <section id="printModal" class="modal hidden">
     <div class="top-row">
-      <h4>Print</h4>
+      <h4>Print Folder</h4>
       <button class="btn-close">x</button>
     </div>
   </section>
