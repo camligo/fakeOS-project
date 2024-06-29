@@ -30,6 +30,11 @@
         display: block;
       }
 
+      &.right {
+        right: -65px;
+        left: auto;
+      }
+
       .list-item {
         padding-block: 0.2em;
         margin-inline: 0.2em;

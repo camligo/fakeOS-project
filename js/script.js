@@ -20,6 +20,18 @@ setInterval(() => {
   displayCurrentTime;
 }, 30000); // updates every 30s
 
+// Display date
+// hardcode the year, updates day & month
+
+const displayDate = () => {
+  const date = new Date();
+  let month = String(date.getMonth() + 1).padStart(2, '0');
+  let day = String(date.getDate()).padStart(2, '0');
+  let currentDate = `${day}-${month}-1984`;
+  document.getElementById('dateDisplay').textContent = `${currentDate}`;
+}
+
+displayDate();
 
 // Menu dropdown
 const dropdownItems = document.querySelectorAll('.dropdown');

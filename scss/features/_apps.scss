@@ -2,14 +2,15 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  margin-top: 25%;
+  margin-top: 20%;
 
   .apps-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
-    padding: 25px;
+    padding: 30px;
+    margin: 20px;
   }
 }
 

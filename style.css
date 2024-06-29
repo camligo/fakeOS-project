@@ -29,6 +29,10 @@
 .nav-top .dropdown .dropdown-list.active {
   display: block;
 }
+.nav-top .dropdown .dropdown-list.right {
+  right: -65px;
+  left: auto;
+}
 .nav-top .dropdown .dropdown-list .list-item {
   padding-block: 0.2em;
   margin-inline: 0.2em;
@@ -54,14 +58,15 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  margin-top: 25%;
+  margin-top: 20%;
 }
 .apps-bg .apps-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 20px;
-  padding: 25px;
+  padding: 30px;
+  margin: 20px;
 }
 
 .app-box {
@@ -154,7 +159,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background-image: url(./assets/img/mac-wallpaper.jpg);
+  background-image: url(../assets/img/mac-wallpaper.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
