@@ -1,5 +1,4 @@
-// Current time
-export function displayCurrentTime() {
+export function getCurrentTime() {
   let currentDateTime = new Date();
   let hours = currentDateTime.getHours();
   let mins = currentDateTime.getMinutes();
@@ -10,12 +9,5 @@ export function displayCurrentTime() {
     mins = '0' + mins;
   }
 
-  let formattedTime = `${hours}:${mins}`;
-  document.getElementById('timeDisplay').textContent = `${formattedTime}`;
+  return `${hours}:${mins}`;
 };
-
-displayCurrentTime();
-
-setInterval(() => {
-  displayCurrentTime;
-}, 30000); // updates every 30s

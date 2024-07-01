@@ -1,48 +1,30 @@
-// Current time
+import { getCurrentTime } from "./features/time.js";
+import { getCurrentDate } from "./features/date.js";
+
 function displayCurrentTime() {
-  let currentDateTime = new Date();
-  let hours = currentDateTime.getHours();
-  let mins = currentDateTime.getMinutes();
-
-  if (hours < 10) {
-    hours = '0' + hours;
-  } else if (mins < 10) {
-    mins = '0' + mins;
-  }
-
-  let formattedTime = `${hours}:${mins}`;
-  document.getElementById('timeDisplay').textContent = `${formattedTime}`;
-};
-
-displayCurrentTime();
-
-setInterval(() => {
-  displayCurrentTime;
-}, 30000); // updates every 30s
-
-// Display date
-// hardcode the year, updates day & month
-
-const displayDate = () => {
-  const date = new Date();
-  let month = String(date.getMonth() + 1).padStart(2, '0');
-  let day = String(date.getDate()).padStart(2, '0');
-  let currentDate = `${day}-${month}-1984`;
-  document.getElementById('dateDisplay').textContent = `${currentDate}`;
+  let formattedTime = getCurrentTime();
+  document.getElementById('timeDisplay').textContent = formattedTime;
 }
+displayCurrentTime();
+setInterval(displayCurrentTime, 10000); // updates every 10s
 
-displayDate();
+// display date in dropdown
+function displayCurrentDate() {
+  let formattedDate = getCurrentDate()
+  document.getElementById('dateDisplay').textContent = formattedDate;
+}
+displayCurrentDate();
 
-// Menu dropdown
+// menu dropdown
 const dropdownItems = document.querySelectorAll('.dropdown');
 
-// add condition that only one of the dropdowns can be opened at once
+// adds condition that only one of the dropdowns can be opened at once
 dropdownItems.forEach(item => {
   item.addEventListener('click', () => {
     const dropdownMenu = item.querySelector('.dropdown-list');
     const isActive = dropdownMenu.classList.contains('active');
 
-    // close all menus
+    // closes all menus
     document.querySelectorAll('.dropdown-list').forEach(menu => {
       menu.classList.remove('active');
     });
@@ -59,10 +41,8 @@ dropdownItems.forEach(item => {
   });
 });
 
-
 // Modals
 const modals = document.querySelectorAll('.modal');
-const closeBtn = document.querySelector('.btn-close');
 const apps = document.querySelectorAll('.app-box')
 
 const openModal = (modal) => {
