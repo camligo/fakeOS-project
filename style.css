@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+.nav-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  background: lightgray;
+  border-bottom: #333333 double 2px;
+  list-style-type: none;
+  padding-inline-start: 15px;
+}
+.nav-top .dropdown {
+  position: relative;
+  padding-inline: 0.2em;
+}
+.nav-top .dropdown.active {
+  background: black;
+  color: #ccc;
+}
+.nav-top .dropdown .dropdown-list {
+  display: none;
+  position: absolute;
+  min-width: 10em;
+  list-style-type: none;
+  background: lightgray;
+  border: 2px double #333333;
+}
+.nav-top .dropdown .dropdown-list.active {
+  display: block;
+}
+.nav-top .dropdown .dropdown-list.right {
+  right: -65px;
+  left: auto;
+}
+.nav-top .dropdown .dropdown-list .list-item {
+  padding-block: 0.2em;
+  margin-inline: 0.2em;
+}
+.nav-top .dropdown .dropdown-list .list-item .menu-item {
+  display: block;
+  text-decoration: none;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  color: black;
+}
+.nav-top .dropdown .dropdown-list .list-item .menu-item:hover {
+  background: black;
+  color: #ccc;
+}
+
+#timeContainer {
+  margin-left: auto;
+  padding-inline-end: 15px;
+}
+
+.apps-bg {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: 20%;
+}
+.apps-bg .apps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 30px;
+  margin: 20px;
+}
+
+.app-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 75px;
+}
+.app-box .app-icon {
+  height: 50px;
+}
+.app-box .labels {
+  background: rgba(255, 255, 255, 0.6117647059);
+  width: max-content;
+  text-align: center;
+  padding-inline: 10px;
+}
+.app-box .labels.file {
+  font-weight: 400;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  min-height: 250px;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  background-color: white;
+  border: 2px solid rgb(19, 19, 19);
+  border-radius: 2px;
+}
+.modal.hidden {
+  display: none;
+}
+.modal .top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px black double;
+}
+.modal .top-row h4 {
+  padding: 1px;
+  align-self: center;
+}
+.modal .top-row .btn-close {
+  width: 20px;
+  background: white;
+  border: 1.4px black solid;
+  position: absolute;
+  right: 0;
+}
+.modal .secondary-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px #6a6a6a solid;
+}
+.modal .secondary-row p {
+  margin-inline: 8px;
+  font-weight: 600;
+}
+.modal .modal-content {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+#binModal {
+  width: 350px;
+  right: 50%;
+  top: 10%;
+}
+
+#printModal {
+  top: 30%;
+  right: 15%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/img/mac-wallpaper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+p {
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

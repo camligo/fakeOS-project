@@ -1,0 +1,62 @@
+@use "../partials/mixins" as m;
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  min-height: 250px;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  background-color: white;
+  border: 2px solid rgb(19, 19, 19);
+  border-radius: 2px;
+
+  &.hidden {
+    display: none;
+  }
+
+  .top-row {
+    @include m.flex($direction: row, $justify: center, $align: center);
+    border-bottom: 4px black double;
+
+    h4 {
+      padding: 1px;
+      align-self: center;
+    }
+
+    .btn-close {
+      width: 20px;
+      background: white;
+      border: 1.4px black solid;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .secondary-row {
+    @include m.flex($direction: row, $justify: space-between, $align: center);
+    border-bottom: 2px #6a6a6a solid;
+
+    p {
+      margin-inline: 8px;
+      font-weight: 600;
+    }
+  }
+
+  .modal-content {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+  }
+}
+
+#binModal {
+  width: 350px;
+  right: 50%;
+  top: 10%;
+}
+
+#printModal {
+  top: 30%;
+  right: 15%;
+}

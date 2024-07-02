@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="./js/script.js" defer type="module"></script>
+  <title>Fake OS - MacIntosh</title>
+</head>
+<body>
+  <nav>
+    <ul class="nav-top">
+      <li class="dropdown">
+        <i class="fa-brands fa-apple"></i>
+        <ul class="dropdown-list">
+          <li class="list-item"><a href="#menu" class="menu-item">About This Mac</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">System Settings</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Note Pad</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <p>File</p>
+        <ul class="dropdown-list">
+          <li class="list-item"><a href="#menu" class="menu-item">New</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Open</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Save</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Save As</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <p>Edit</p>
+        <ul class="dropdown-list">
+          <li class="list-item"><a href="#menu" class="menu-item">Undo</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Cut</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Copy</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Paste</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <p>View</p>
+        <ul class="dropdown-list">
+          <li class="list-item"><a href="#menu" class="menu-item">Zoom</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Clean Up</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Arrange</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <p>Special</p>
+        <ul class="dropdown-list">
+          <li class="list-item"><a href="#menu" class="menu-item">Shut Down</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Restart</a></li>
+          <li class="list-item"><a href="#menu" class="menu-item">Empty Trash</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="timeContainer">
+        <p id="timeDisplay"></p>
+        <ul class="dropdown-list right">
+          <li id="dateContainer" class="list-item"><p id="dateDisplay" class="menu-item"></p></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main class="apps-bg">
+    <div class="apps-container">
+      <div id="binApp" class="app-box">
+        <img class="app-icon" src="./assets/img/bin.png" alt="bin app">
+        <p class="labels">Bin</p>
+      </div>
+      <div id="paintApp" class="app-box">
+        <img class="app-icon" src="./assets/img/desk.png" alt="paint folder">
+        <p class="labels">MacPaint</p>
+      </div>
+      <div id="printApp" class="app-box">
+        <img class="app-icon" src="./assets/img/printer.png" alt="print app">
+        <p class="labels">Print</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modals -->
+  <section id="paintModal" class="modal hidden">
+    <div class="top-row">
+      <h4>MacPaint Folder</h4>
+      <button class="btn-close">x</button>
+    </div>
+    <div class="secondary-row">
+      <p>2 items</p>
+      <p>315K available</p>
+    </div>
+    <div class="modal-content">
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/paint.png" alt="paint app">
+        <p class="labels file">MacPaint 1.4</p>
+      </div>
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/file.png" alt="paint file">
+        <p class="labels file">hello</p>
+      </div>
+    </div>
+  </section>
+  <section id="binModal" class="modal hidden">
+    <div class="top-row">
+      <h4>Bin</h4>
+      <button class="btn-close">x</button>
+    </div>
+    <div class="secondary-row">
+      <p>3 items</p>
+      <p>65K in folder</p>
+    </div>
+    <div class="modal-content">
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/file.png" alt="file">
+        <p class="labels file">text</p>
+      </div>
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/file.png" alt="file">
+        <p class="labels file">doc</p>
+      </div>
+      <div class="app-box">
+        <img class="app-icon" src="./assets/img/dog.png" alt="file">
+        <p class="labels file">random</p>
+      </div>
+    </div>
+  </section>
+  <section id="printModal" class="modal hidden">
+    <div class="top-row">
+      <h4>Print Folder</h4>
+      <button class="btn-close">x</button>
+    </div>
+  </section>
+</body>
+</html>
